@@ -1,0 +1,76 @@
+.logo {
+	flex-basis: 100%;
+	will-change: filter;
+	transition: filter 300ms;
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.logo:hover {
+	filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+	filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.logo {
+		animation: logo-spin infinite 20s linear;
+	}
+}
+
+.sidebar{
+	margin: 1em;
+	display: flex;
+	flex-basis: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+	z-index: 1;
+}
+
+.sidebar__buttons{
+	width: 100%;
+	display:block;
+}
+
+.sidebar__button{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: white;
+	background: 0;
+	border: solid rgba(255,255,255,0.4) 2px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 10px 15px 10px 15px;
+	border-radius: 15px;
+	width: 100%;
+	transition: background-color .2s;
+	justify-content: center;
+}
+
+.sidebar__button:hover:not(:active){
+	cursor: pointer;
+	border: solid rgba(255,255,255,0.4) 2px;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.sidebar__button:active{
+	cursor: pointer;
+	border: solid deepskyblue 2px;
+	background-color: deepskyblue;
+}
+
+.sidebar__button  span{
+	font-size: 100%;
+	font-weight: bolder;
+}

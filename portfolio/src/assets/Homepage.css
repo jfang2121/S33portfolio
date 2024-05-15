@@ -1,0 +1,16 @@
+.homepage{
+	display: flex;
+	flex-direction: row;
+}
+
+.homepage__sidebar{
+	transition: flex 2s;	
+	flex: 0.15;
+}
+
+.homepage__portfolio{
+	padding-left: 50px;
+	transition: flex 2s;	
+	flex: 0.7;
+}
+
