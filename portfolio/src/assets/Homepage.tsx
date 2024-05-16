@@ -5,6 +5,9 @@ import './Homepage.css';
 
 
 function Homepage(){
+	const scrollToElement = (id: string) => {
+		const current =  document.getElementById(id)
+	}
 	return(
 		<div className="homepage">
 			<div className="homepage__sidebar">

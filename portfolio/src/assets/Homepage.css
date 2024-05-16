@@ -1,16 +1,16 @@
 .homepage{
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	justify-content: space-around;
+	grid-template-columns: 12em auto;
 }
 
 .homepage__sidebar{
-	transition: flex 2s;	
-	flex: 0.15;
+	position: sticky;
+	top: 0;
+	height: 100vh;
 }
 
 .homepage__portfolio{
-	padding-left: 50px;
-	transition: flex 2s;	
-	flex: 0.7;
+	margin-right: 2em;
 }
 
